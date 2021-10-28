@@ -1,5 +1,18 @@
+body{
+  background-color: #202c37;
+
+}
 .App {
   text-align: center;
+ 
+}
+.card{
+  /* background-color: #2b3945;
+  color: #fff; */
+  box-shadow: 0 1px 3px rgb(0 0 0 / 6%), 0 1px 2px rgb(0 0 0 / 12%);
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .App-logo {

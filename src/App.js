@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
@@ -49,15 +48,11 @@ function App() {
         <Row>
           <Col md="8">
           <BuyPage addInCart={addInCart} />
-          
           </Col>
           <Col md="4">
             <Cart cartItem = {cartItem} removeItem = {removeItem} buyNow = {buyNow}/>
           </Col>
         </Row>
-      
-      
-    
     </Container>
      
   

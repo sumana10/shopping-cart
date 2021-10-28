@@ -25,24 +25,20 @@ export default function Cart({cartItem, removeItem, buyNow}) {
       <ListGroup>
       {cartItem.map(item =>(
         <ListGroupItem key={item.id}>
-
           <Row>
             <Col>
             <img 
             height={80}
             src={item.tinyImage} />
-            
             </Col>
             <Col className="text-center">
               <div className="text-primary">
                 {item.productName}
               </div>
             <span>price:-{item.productPrice}</span>
-            <Button color="danger" onClick={()=>removeItem()}>Remove</Button>
+            <Button color="danger" onClick={()=>removeItem(item)}>Remove</Button>
             </Col>
-          
           </Row>
-        
         </ListGroupItem>
         
       ))}
@@ -56,7 +52,6 @@ export default function Cart({cartItem, removeItem, buyNow}) {
             </CardHeader>
             <CardBody>
               Your amount for {cartItem.length} is {amount}
-            
             </CardBody>
             <CardFooter>
               <Button color="success" onClick={buyNow}>pay here</Button>

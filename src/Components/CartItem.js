@@ -24,8 +24,7 @@ const  CartItem = ({product, addInCart}) => {
         Buy Now
       </Button>
     </CardBody>
-  </Card>
-    
+    </Card> 
   )
 }
 
