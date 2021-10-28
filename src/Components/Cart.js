@@ -21,7 +21,7 @@ export default function Cart({cartItem, removeItem, buyNow}) {
   })
   return (
     <Container>
-      <h1 className="text-success">Your Cart</h1>
+      <h1>Your Cart</h1>
       <ListGroup>
       {cartItem.map(item =>(
         <ListGroupItem key={item.id}>

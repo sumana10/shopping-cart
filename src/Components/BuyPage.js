@@ -61,7 +61,7 @@ const BuyPage = ({addInCart})=>{
 
   return (
     <Container fluid>
-      <h1 className="text-success text-center">Buy Page</h1>
+      <h1>Buy Page</h1>
       <Row>
       {product.map(product =>(
 
