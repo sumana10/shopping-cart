@@ -11,7 +11,7 @@ import CartItem from './CartItem';
 //this is my key from pexel
 const apiKey = "563492ad6f917000010000014adcc8c45bfd446d8629a315d4a42db2";
 //url for access
-const url = "https://api.pexels.com/v1/search?query=toys&per_page=6&page=2";
+const url = "https://api.pexels.com/v1/search?query=dolls&per_page=6&page=2";
 //my jsonpage url
 const localurl = "http://myjson.dit.upm.es/api/bins/1lt3"
 
