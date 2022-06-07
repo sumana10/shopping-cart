@@ -21,7 +21,9 @@ export default function Cart({cartItem, removeItem, buyNow}) {
   })
   return (
     <Container>
-      <h1>Your Cart</h1>
+      <div className="buy-header">
+      <h3>Your Cart</h3>
+      </div>
       <ListGroup>
       {cartItem.map(item =>(
         <ListGroupItem key={item.id}>
@@ -32,11 +34,16 @@ export default function Cart({cartItem, removeItem, buyNow}) {
             src={item.tinyImage} />
             </Col>
             <Col className="text-center">
-              <div className="text-primary">
+              <div className="text-primary cart-tag">
                 {item.productName}
               </div>
-            <span>price:-{item.productPrice}</span>
-            <Button color="danger" onClick={()=>removeItem(item)}>Remove</Button>
+              <div className="text-primary cart-tag">
+                Rs: {item.productPrice}
+              </div>
+              <div className="text-primary cart-tag">
+              <Button className="btn-rem" color="danger" onClick={()=>removeItem(item)}>Remove</Button>
+              </div>
+            
             </Col>
           </Row>
         </ListGroupItem>
@@ -54,15 +61,17 @@ export default function Cart({cartItem, removeItem, buyNow}) {
               Your amount for {cartItem.length} is {amount}
             </CardBody>
             <CardFooter>
-              <Button color="success" onClick={buyNow}>pay here</Button>
+              <Button className="btn-buy" color="success" onClick={buyNow}>pay here</Button>
             </CardFooter>
           
           </Card>
         ):(
-
-          <h1 className="text-warning">
+          
+          <div className="buy-header">
+          <h3 className="text-warning">
           Cart is Empty
-          </h1>
+          </h3>
+          </div>
           
         )
       }

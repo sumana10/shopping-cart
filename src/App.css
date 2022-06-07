@@ -1,5 +1,5 @@
 body{
-  background-color: #342037;
+  background-color: rgb(79, 50, 103);;
 
 }
 .App {
@@ -7,13 +7,15 @@ body{
  
 }
 .card{
-  /* background-color: #2b3945;
-  color: #fff; */
+  background-color: #ba89ba;
+  color: rgb(79, 50, 103);
   box-shadow: 0 1px 3px rgb(0 0 0 / 6%), 0 1px 2px rgb(0 0 0 / 12%);
   cursor: pointer;
   overflow: hidden;
   max-width: 100%;
+  font-weight: 600;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -40,7 +42,7 @@ body{
 .App-link {
   color: #61dafb;
 }
-h1{
+h3{
   color : #fff;
   text-align: center;
   padding: 10px;
@@ -53,4 +55,58 @@ h1{
   to {
     transform: rotate(360deg);
   }
+}
+
+/* .card {
+
+ 
+  
+} */
+
+
+.card-image {
+  width: 260px;
+  height: 260px;
+  /* overflow: hidden; */
+}
+.img-cover {
+  object-fit: cover;
+}
+.btn-buy{
+  background-color: rgb(79, 50, 103);
+  border: none;
+  
+}
+.btn-buy:hover, .btn-buy:active, .btn-buy:focus{
+  background-color: rgba(79, 50, 103, 0.626);
+  /* outline: none; */
+  box-shadow: none !important;
+  outline: 0;
+  -webkit-box-shadow: none;
+  
+}
+
+.btn-rem{
+  background-color: transparent;
+  color:rgb(79, 50, 103);
+  border:none;
+}
+
+.btn-rem:hover, .btn-rem:active, .btn-rem:focus{
+  background-color: transparent;
+  color:rgb(79, 50, 103);
+  box-shadow: none !important;
+  outline: 0;
+  -webkit-box-shadow: none;
+  
+}
+
+.cart-tag{
+  color: rgb(79, 50, 103) !important;
+}
+
+.buy-header{
+  background-color: #ba89ba;; 
+  margin-top: 10px;
+  text-transform: uppercase;
 }

@@ -21,9 +21,7 @@ function App() {
     });
 
     if (isAlreadyAdded !== -1) {
-      toast("already added in cart", {
-        type: "error"
-      });
+      toast("already added in cart");
       return
     }
 
@@ -33,9 +31,7 @@ function App() {
   const buyNow = () => {
     setCartItem([]);
 
-    toast("Purchase Complete", {
-      type: "success"
-    });
+    toast("Purchase Complete");
   };
 
   const removeItem = item => {
