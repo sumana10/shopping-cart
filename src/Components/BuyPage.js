@@ -60,9 +60,10 @@ const BuyPage = ({addInCart})=>{
   }, [])
 
   return (
-    <Container fluid>
-      <div className="buy-header">
+    <Container fluid className="buy-header">
+      <div>
       <h3>Buy Page</h3>
+      <hr />
       </div>
       <Row>
       {product.map(product =>(

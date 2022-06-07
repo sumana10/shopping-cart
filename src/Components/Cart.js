@@ -20,9 +20,10 @@ export default function Cart({cartItem, removeItem, buyNow}) {
     amount = parseFloat(amount) + parseFloat(item.productPrice)
   })
   return (
-    <Container>
-      <div className="buy-header">
+    <Container className="buy-header">
+      <div >
       <h3>Your Cart</h3>
+      <hr />
       </div>
       <ListGroup>
       {cartItem.map(item =>(

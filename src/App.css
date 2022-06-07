@@ -65,7 +65,7 @@ h3{
 
 
 .card-image {
-  width: 260px;
+  width: 270px;
   height: 260px;
   /* overflow: hidden; */
 }
@@ -106,7 +106,9 @@ h3{
 }
 
 .buy-header{
+  
   background-color: #ba89ba;; 
-  margin-top: 10px;
+  margin: 20px 0px;
+  padding: 20px 20px;
   text-transform: uppercase;
 }
