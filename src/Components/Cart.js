@@ -27,7 +27,7 @@ export default function Cart({cartItem, removeItem, buyNow}) {
       </div>
       <ListGroup>
       {cartItem.map(item =>(
-        <ListGroupItem key={item.id}>
+        <ListGroupItem key={item.id} className="item">
           <Row>
             <Col>
             <img 

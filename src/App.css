@@ -1,6 +1,6 @@
 body{
-  background-color: rgb(79, 50, 103);;
-
+  /* background-color: rgb(79, 50, 103); */
+  background-color: #c5a5c5d0;
 }
 .App {
   text-align: center;
@@ -106,9 +106,13 @@ h3{
 }
 
 .buy-header{
-  
-  background-color: #ba89ba;; 
+  border-radius: 4px;
+  border: 2px solid #ba89ba;
+  background-color: #ba89ba; 
   margin: 20px 0px;
   padding: 20px 20px;
   text-transform: uppercase;
+}
+.item{
+  background-color: #c5a5c5d0;
 }
